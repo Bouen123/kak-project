@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- navbar -->
+    <div class="nav">
+      <div class="all-nav">
+        <img class="logo" src="./images/logo.svg" alt="#">
+        <ul class="nav1">
+          <li class="letter" id="drop" onclick="drop">
+            <a class="letter1" href="#">Features</a>
+            <image class="icon" id="icon" src="./images/icon-arrow-down.svg" style="padding:0 0 2px 10px ;"></image>
+            <image class="icon1" id="icon1"  src="./images/icon-arrow-up.svg" style="padding:0 0 2px 10px ;"></imgage>
+            <ul class="dropdown-content" id="dropdownFeatures">
+              <li><img class="svg" src="./images/icon-todo.svg"></img><a class="a1" href="#">Todo List</a></li>
+              <li><img class="svg" src="./images/icon-calendar.svg"></img><a class="a1" href="#">Calendar</a></li>
+              <li><img class="svg" src="./images/icon-reminders.svg"></img><a class="a1" href="#">Reminders</a></li>
+              <li><img class="svg" src="./images/icon-planning.svg"></img><a class="a1" href="#">Planning</a></li>
+            </ul>
+          </li>
+          <li class="letter" id="toggleDropdown" onclick="drop2"><a class="letter1" href="#">Company</a>
+            <image class="icon2" id="icon2" src="./images/icon-arrow-down.svg" style="padding:0 0 2px 10px ;"></image>
+            <image class="icon3" id="icon3" src="./images/icon-arrow-up.svg" style="padding:0 0 2px 10px ;"></image>
+            <ul class="dropdown-content" id="dropdownCompany">
+              <li><a class="a2" href="#">History</a></li>
+              <li><a class="a2" href="#">Our Team</a></li>
+              <li><a class="a2" href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="letter"><a class="letter1" href="#">Careers</a></li>
+          <li class="letter"><a class="letter1" href="#">About</a></li> 
+        </ul>     
+      </div>
+      <div class="right">
+        <ul class="nav2">
+          <li class="login"><a class="log" href="#">Login</a></li>
+          <button class="btnr">Register</button>
+        </ul>
+        <img id="burger" src="./images/icon-menu.svg" alt="">
+        <img id="close" src="./images/icon-close-menu.svg" alt="">
+      </div>
+    </div>
+    
+    <!-- This is the section under the navbar -->
+    <div class="under">
+       <div class="left">
+          <div class="allp">
+            <p class="h1">Make remote work</p>
+            <p class="h2">Get your team in sync, no matter your location. Streamline processes, 
+              create team rituals, and watch productivity soar.</p>
+            <button class="btnl">Learn more</button>
+          
+          <div class="footer">
+            <img src="./images/client-databiz.svg" alt="#">
+            <img src="./images/client-audiophile.svg" alt="#">
+            <img src="./images/client-meet.svg" alt="#">
+            <img src="./images/client-maker.svg" alt="#">
+          </div>
+        </div>
+        <div class="rgith">
+          <img class="img1" src="./images/image-hero-desktop.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
